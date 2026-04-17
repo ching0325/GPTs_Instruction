@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>客製化 ChatGPT 機器人指令庫：電商工作日報 x 數據分析</title>
+    <title>客製化 AI 機器人指令庫：電商工作日報 x 數據分析</title>
     <style>
         :root {
             --primary-color: #4976c5;
@@ -181,9 +181,9 @@
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>初始邏輯與清洗</h2>
-            <p>請複製以下指令，並上傳「order」與「官網訂單」檔案給 ChatGPT：</p>
+            <p>請複製以下指令，並上傳「order」與「官網訂單」檔案給 AI：</p>
             <div class="prompt-box">
 你是一位高階跨境電商數據分析師，以上有四個檔案，Input為「order」、「S8」檔案，「order」為官網訂單明細原始檔，「S8」為廣告明細原始檔；Output為「官網訂單」、「廣告數據」。
 
@@ -204,7 +204,7 @@
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>廣告數據處理</h2>
             <p>接續上述對話，上傳「S8」與「廣告數據」檔案，並輸入以下指令進行資料整理：</p>
             <div class="prompt-box">
@@ -216,7 +216,7 @@
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>整理程式碼</h2>
             <p>接續上述對話，輸入以下指令整理完整程式碼：</p>
             <div class="prompt-box">
@@ -224,9 +224,9 @@
         </div>
 
         <div class="section">
-            <span class="badge badge-system">GPTs 配置專用</span>
-            <h2>配置 GPTs 指令</h2>
-            <p>將以下內容貼到 GPTs 的「指令」中。請記得將上一步驟 ChatGPT 產生的完整 Python 程式碼填入下方標示處：</p>
+            <span class="badge badge-system">AI機器人配置專用</span>
+            <h2>配置 AI 機器人指令</h2>
+            <p>將以下內容貼到 Gem 的「使用說明」中。請記得將上一步驟 AI 產生的完整 Python 程式碼填入下方標示處：</p>
             <div class="prompt-box">
 你是一個高階跨境電商數據分析師，請詢問使用者input資料為何，並將input的資料放入到下述Python程式碼的「order_df」、「s8_df」；然後產出output資料！
 
@@ -234,7 +234,7 @@ order_df代表使用者上傳的檔案含有order的input檔案
 s8_df代表使用者上傳的檔案含有s8的input檔案
 
 下面是Python程式碼：
-【在此處貼上 ChatGPT 剛剛產出的完整 Python 程式碼】
+【在此處貼上 AI 剛剛產出的完整 Python 程式碼】
 
 <button class="copy-btn" onclick="copyText(this)">複製</button></div>
         </div>
@@ -246,9 +246,9 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>錯誤修正</h2>
-            <p>請複製以下指令，並貼上您的程式碼給 ChatGPT 進行錯誤修正：</p>
+            <p>請複製以下指令，並貼上您的程式碼給 AI 進行錯誤修正：</p>
             <div class="prompt-box">
 以下這段程式碼會出現兩個錯誤：
 1. 找不到上傳的excel檔案的工作表單，程式碼應該不論表單名稱為何，都能讀取到
@@ -260,18 +260,18 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>測試修正結果</h2>
             <p>使用修正後的程式碼進行測試：</p>
             <div class="prompt-box">
 請幫我用以下程式碼處理上傳的兩個檔案，並回傳結果。
 
 程式碼：
-【貼上ChatGPT修正的程式碼】<button class="copy-btn" onclick="copyText(this)">複製</button></div>
+【貼上 AI 修正的程式碼】<button class="copy-btn" onclick="copyText(this)">複製</button></div>
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>增加資料處理細節（非必要）</h2>
             <p>補充更詳細的資料處理邏輯：</p>
             <div class="prompt-box">
@@ -291,7 +291,7 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>數據分析邏輯</h2>
             <div class="prompt-box">
 請依照以下邏輯寫Python程式碼以進行數據分析：
@@ -307,7 +307,7 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>策略建議生成</h2>
             <div class="prompt-box">
 請根據「產品數據分析結果」，綜合考慮各數據，給出「各產品」的「後續廣告及行銷策略建議」。
@@ -316,15 +316,15 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
         </div>
 
         <div class="section">
-            <span class="badge badge-system">GPTs 配置專用</span>
-            <h2>配置 GPTs 指令</h2>
-            <p>請將此段放入到 GPTs 的「指令」後段：</p>
+            <span class="badge badge-system">AI機器人配置專用</span>
+            <h2>配置 AI 機器人指令</h2>
+            <p>請將此段放入到 AI 機器人的「使用說明」後段：</p>
             <div class="prompt-box">
 完成日報產出後，請接續詢問是否需要進一步的數據分析。
 若否，詢問是否需要其他幫助；
 若是，請依照以下Python程式碼計算各產品的ROI、廣告效益、利潤、訂單轉換率：
 
-【在此處貼上 ChatGPT 產出的進階分析 Python 程式碼】
+【在此處貼上 AI 產出的進階分析 Python 程式碼】
 
 完成分析後，請詢問是否需要進一步的策略建議。
 若是，請根據「產品數據分析結果」，綜合考慮各數據，給出「各產品」的「精要數據解讀」、「後續廣告及行銷策略建議」，並總整所有資訊給出「總體執行策略建議」；
@@ -338,7 +338,7 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
         </div>
 
         <div class="section">
-            <span class="badge badge-user">輸入給 ChatGPT</span>
+            <span class="badge badge-user">輸入給 AI</span>
             <h2>SKU 工具邏輯</h2>
             <p>請上傳含有「SKU編碼」的檔案，並輸入以下指令：</p>
             <div class="prompt-box">
@@ -352,14 +352,14 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
         </div>
 
         <div class="section">
-            <span class="badge badge-system">GPTs 配置專用</span>
-            <h2>配置 GPTs 指令 (SKU 助手)</h2>
+            <span class="badge badge-system">AI機器人配置專用</span>
+            <h2>配置 AI 機器人指令 (SKU 助手)</h2>
             <div class="prompt-box">
 【角色設定】
 你是一個SKU查詢小助手，專門協助查詢與更新商品資料庫。
 
 【Python 邏輯】
-【在此處貼上 ChatGPT 產出的 SKU Python 程式碼】
+【在此處貼上 AI 產出的 SKU Python 程式碼】
 
 【互動流程】
 1. 當使用者更新資料庫後，請詢問使用者是否需要查看更新後的資料庫，若是，請以表格的形式呈現，若否，請詢問是需要其他幫助。
