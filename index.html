@@ -173,6 +173,7 @@
         <button class="tab-btn" onclick="openTab(event, 'tab2')">2. 錯誤修正</button>
         <button class="tab-btn" onclick="openTab(event, 'tab3')">3. 進階分析</button>
         <button class="tab-btn" onclick="openTab(event, 'tab4')">4. SKU查詢小助手</button>
+        <button class="tab-btn" onclick="openTab(event, 'tab5')">5. 儀錶板產出</button>
     </div>
 
     <div id="tab1" class="tab-content active">
@@ -364,6 +365,53 @@ s8_df代表使用者上傳的檔案含有s8的input檔案
 【互動流程】
 1. 當使用者更新資料庫後，請詢問使用者是否需要查看更新後的資料庫，若是，請以表格的形式呈現，若否，請詢問是需要其他幫助。
 2. 當使用者查看更新後的資料庫，請詢問使用者是否需要輸出成excel檔，若是，請將資料庫以excel的格式提供匯出連結，若否，請詢問使用者是否需要其他協助。<button class="copy-btn" onclick="copyText(this)">複製</button></div>
+        </div>
+    </div>
+
+    <div id="tab5" class="tab-content">
+        <div class="note">
+            <strong>說明：</strong>此頁面提供給 AI 生成分析型 HTML 儀錶板的提示詞。若需要資料清理，請參考「電商小助手Python程式碼.txt」，並將廣告數據依蝦皮、momo、pchome分開計算、管理與呈現。
+        </div>
+
+        <div class="section">
+            <span class="badge badge-user">輸入給 AI</span>
+            <h2>儀錶板產出提示詞</h2>
+            <p>請將以下提示詞連同你的資料檔案一併提供給 AI，讓它直接產出完整 HTML 儀錶板。</p>
+            <div class="prompt-box">
+你現在是一個世界級的儀表板設計大師
+
+請根據以上資料與產出，設計一個「分析型儀錶板」，包含：
+1. 應呈現哪些關鍵指標
+2. 該如何呈現數值：表格？適合的圖表？
+3. 介面如何設計：色彩、字體、佈局排版、分析文字、策略建議
+4. 可以給使用者操作的功能，如 數據與圖表下載、分頁切換等
+
+最後請產出一段給 AI 的提示詞，以及我該上傳給 AI 參考的檔案，讓 AI 可以產出以上所有要求的 html 儀表板
+
+分析型儀錶板說明：
+1. 目標對象：業務分析師、部門經理
+2. 核心用途：提供深入的數據探索與績效分析、協助使用者理解趨勢、比較表現並發現潛在問題
+3. 關注問題：為什麼會出現這樣的結果？ 哪些因素影響了績效變化？ 與過去表現相比，目前狀況如何？
+4. 資料特性：資料維度較多、通常會與過去績效進行比較、資訊密度較高，但仍需保持可讀性
+5. 設計重點：以資料為核心，減少不必要的圖像裝飾、平衡資訊密度與介面清晰度、讓重要資料或核心分析數據置於明顯位置
+6. 呈現方式：向下鑽取、篩選條件、多維度比較、趨勢圖表、詳細數據視圖
+
+注意：
+1. 若需要資料清理，程式邏輯請參考「電商小助手Python程式碼.txt」
+2. 在廣告數據的部分，請將不同平台(蝦皮、momo、pchome)的數據分開計算管理與呈現
+<button class="copy-btn" onclick="copyText(this)">複製</button></div>
+        </div>
+
+        <div class="section">
+            <span class="badge badge-system">建議上傳</span>
+            <h2>提供給 AI 的參考檔案</h2>
+            <div class="prompt-box">
+1. 分析後的最終輸出檔案
+2. 原始訂單、商品、廣告等 Excel 或 CSV 資料
+3. 電商小助手Python程式碼.txt
+4. 若有歷史同期資料，也一併提供，方便做趨勢與比較分析
+5. 若有品牌色、字體、版型偏好，也可一起提供給 AI
+<button class="copy-btn" onclick="copyText(this)">複製</button></div>
         </div>
     </div>
 
